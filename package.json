@@ -1,0 +1,77 @@
+{
+  "name": "remix-run-snippets-and-commands",
+  "displayName": "Remix Run snippets and commands",
+  "description": "Easy to use snippets and commands for remix run apps",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onCommand:remix-run-snippets-and-commands.helloWorld"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./src/snippets/remix-run.js.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./src/snippets/remix-run.js.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./src/snippets/remix-run.ts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./src/snippets/remix-run.ts.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "remix-run-snippets-and-commands.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.82.0",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3",
+    "@vscode/test-electron": "^2.2.0"
+  },
+  "keywords": [
+    "remix",
+    "remix run",
+    "remix run snippets",
+    "snippet",
+    "snippets",
+    "remix.run",
+    "dynamic code snippets",
+    "javascript",
+    "typescript",
+    "react",
+    "snippets for remix",
+    "snippets for remix run"
+  ]
+}
