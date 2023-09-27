@@ -1,0 +1,97 @@
+{
+  "Remix Loader function": {
+    "prefix": "rlf",
+    "body": ["export async function loader({}) {", "\treturn {${1}}", "};", ""],
+    "description": "Remix Loader function"
+  },
+  "Remix Loader function extended": {
+    "prefix": "rloader",
+    "body": ["export async function loader({}) {", "\treturn {${1}}", "};", ""],
+    "description": "Remix Loader function"
+  },
+  "Remix Action function": {
+    "prefix": "raf",
+    "body": ["export async function action({}) {", "\treturn {${1}}", "};", ""],
+    "description": "Remix Action function"
+  },
+  "Remix Action function extended": {
+    "prefix": "raction",
+    "body": ["export async function action({}) {", "\treturn {${1}}", "};", ""],
+    "description": "Remix Action function"
+  },
+  "Remix Headers function": {
+    "prefix": "rhf",
+    "body": [
+      "export const headers = ({}) => {",
+      "\treturn {",
+      "\t\t${1}",
+      "\t}",
+      "};",
+      ""
+    ],
+    "description": "Remix headers function"
+  },
+  "Remix Headers function extended": {
+    "prefix": "rheader",
+    "body": [
+      "export const headers = ({}) => {",
+      "\treturn {",
+      "\t\t${1}",
+      "\t}",
+      "};",
+      ""
+    ],
+    "description": "Remix headers function"
+  },
+  "Remix Meta function": {
+    "prefix": "rmf",
+    "body": [
+      "export const meta = () => {",
+      "\treturn [",
+      "\t\t{",
+      "\t\t\ttitle:\"${1}\",",
+      "\t\t},",
+      "\t\t{",
+      "\t\t\tname:\"${2}\",",
+      "\t\t\tcontent:\"${3}\"",
+      "\t\t}",
+      "\t]",
+      "};",
+      ""
+    ],
+    "description": "Remix meta function"
+  },
+  "Remix Meta function extended": {
+    "prefix": "rmeta",
+    "body": [
+      "export const meta = () => {",
+      "\treturn [",
+      "\t\t{",
+      "\t\t\ttitle:\"${1}\",",
+      "\t\t},",
+      "\t\t{",
+      "\t\t\tname:\"${2}\",",
+      "\t\t\tcontent:\"${3}\"",
+      "\t\t}",
+      "\t]",
+      "};",
+      ""
+    ],
+    "description": "Remix meta function"
+  },
+  "Remix Links function": {
+    "prefix": "rlink",
+    "body": [
+      "export const links = () => {",
+      "\treturn [",
+      "\t\t{",
+      "\t\t\trel:\"${1}\",",
+      "\t\t\thref:\"${2}\"",
+      "\t\t}",
+      "\t]",
+      "};",
+      ""
+    ],
+    "description": "Remix Links function"
+  }
+}
